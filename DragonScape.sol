@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at BscScan.com on 2021-09-17
+*/
+
 pragma solidity ^0.7.0;
 
 /**
@@ -1397,7 +1401,7 @@ contract DSCAPE is ERC20, Ownable {
 
         dividendTracker = new DSCAPEDividendTracker();
         
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
          // Create a uniswap pair for this new token
         address _uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
